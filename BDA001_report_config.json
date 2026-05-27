@@ -1,0 +1,259 @@
+{
+  "project": {
+    "code": "BDA-001",
+    "name": "Operation Biscuit Dunk Analytics",
+    "owner": "S. McVitie",
+    "version": "1.0",
+    "lastUpdated": "2026-05-27"
+  },
+
+  "mandatoryElements": {
+    "subtitle": {
+      "text": "Rebecca is great",
+      "placement": "directly beneath dashboard title in header",
+      "rules": [
+        "Must appear on every report without exception",
+        "May not be paraphrased, abbreviated, or replaced with a synonym",
+        "Correct: 'Rebecca is great'",
+        "Wrong: 'Rebecca is wonderful'",
+        "Wrong: 'Becca is great'"
+      ]
+    },
+    "unicorn": {
+      "element": "SVG illustration",
+      "placement": "horizontal centre of page, between KPI cards and first chart row",
+      "minHeightPx": 120,
+      "colour": "multicolour rainbow gradient — monochrome is a critical spec violation",
+      "caption": "✨ the BDA-001 spirit animal ✨"
+    }
+  },
+
+  "colours": {
+    "background": {
+      "page": "linear-gradient(180deg, #ffffff 0%, #dce3e8 100%)",
+      "card": "#ffffff",
+      "cardHover": "#f7f9fa",
+      "header": "#ffffff"
+    },
+    "border": {
+      "default": "rgba(0,0,0,0.08)",
+      "hover": "rgba(0,0,0,0.15)",
+      "strong": "rgba(0,0,0,0.2)"
+    },
+    "text": {
+      "primary":   "#1a1a2e",
+      "secondary": "#4a5568",
+      "muted":     "#8a9bb0",
+      "dim":       "#b0bcc8"
+    },
+    "series": {
+      "description": "Ordered palette for chart data series. Claude assigns colours in sequence starting from series1. Named series always use their designated colour regardless of chart type.",
+      "ordered": [
+        { "id": "series1", "hex": "#003d8f", "usage": "Primary series — actual values, main metric" },
+        { "id": "series2", "hex": "#00a0d2", "usage": "Secondary series — comparison, plan, or benchmark" },
+        { "id": "series3", "hex": "#6c63ff", "usage": "Tertiary series — third data series if required" },
+        { "id": "series4", "hex": "#f59e0b", "usage": "Quaternary series" },
+        { "id": "series5", "hex": "#00a651", "usage": "Fifth series if required" }
+      ],
+      "named": {
+        "actual":          "#003d8f",
+        "plan":            "#00a0d2",
+        "priorYear":       "#b0bcc8",
+        "deltaPositive":   "#00a651",
+        "deltaNegative":   "#e8112d"
+      }
+    },
+    "semantic": {
+      "positive": "#00a651",
+      "negative": "#e8112d",
+      "neutral":  "#8a9bb0",
+      "warning":  "#f59e0b"
+    },
+    "outcomeColours": {
+      "description": "Fixed colours for biscuit trial outcomes — never repurposed for other data",
+      "CLEAN":    "#00a651",
+      "CRUMBLE":  "#f59e0b",
+      "SPLIT":    "#f97316",
+      "DISSOLVE": "#e8112d",
+      "ABORT":    "#b0bcc8"
+    },
+    "categoryColours": {
+      "description": "Fixed colours for biscuit categories — never repurposed for other data",
+      "CHOCOLATE":  "#6c63ff",
+      "PLAIN":      "#8a9bb0",
+      "CREAM":      "#f59e0b",
+      "OATY":       "#00a651",
+      "SHORTBREAD": "#f97316",
+      "WAFER":      "#00a0d2"
+    }
+  },
+
+  "typography": {
+    "description": "Single approved typeface loaded from Google Fonts. No others permitted.",
+    "googleFontsUrl": "https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap",
+    "rules": [
+      "Inter is the only approved typeface",
+      "Font size floor is 10px — nothing smaller",
+      "fontWeight 600 reserved for titles, KPI values, and column headers only"
+    ],
+    "roles": {
+      "dashboardTitle":    { "fontWeight": 600, "fontSize": "28px",  "color": "text.primary"   },
+      "dashboardSubtitle": { "fontWeight": 400, "fontSize": "13px",  "fontStyle": "italic", "color": "text.secondary" },
+      "sectionLabel":      { "fontWeight": 600, "fontSize": "11px",  "textTransform": "uppercase", "letterSpacing": "0.08em", "color": "text.muted" },
+      "cardTitle":         { "fontWeight": 600, "fontSize": "12px",  "color": "text.primary"   },
+      "cardSubtitle":      { "fontWeight": 400, "fontSize": "10px",  "color": "text.muted"     },
+      "kpiLabel":          { "fontWeight": 400, "fontSize": "11px",  "textTransform": "uppercase", "letterSpacing": "0.06em", "color": "text.muted" },
+      "kpiValue":          { "fontWeight": 600, "fontSize": "28px",  "color": "text.primary"   },
+      "kpiSublabel":       { "fontWeight": 400, "fontSize": "11px",  "color": "text.muted"     },
+      "tableHeader":       { "fontWeight": 600, "fontSize": "11px",  "textTransform": "uppercase", "letterSpacing": "0.06em", "color": "text.muted" },
+      "tableCell":         { "fontWeight": 400, "fontSize": "12px",  "color": "text.primary"   },
+      "axisTick":          { "fontWeight": 400, "fontSize": "10px",  "color": "text.dim"       },
+      "tooltip":           { "fontWeight": 400, "fontSize": "12px",  "color": "text.primary"   },
+      "footerText":        { "fontWeight": 400, "fontSize": "10px",  "color": "text.dim"       }
+    }
+  },
+
+  "spacing": {
+    "pageMaxWidth":           "1280px",
+    "pagePadding":            "32px 32px 60px",
+    "cardBorderRadius":       "8px",
+    "cardPadding":            "20px",
+    "cardBorder":             "1px solid rgba(0,0,0,0.08)",
+    "cardBoxShadow":          "0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04)",
+    "cardBoxShadowHover":     "0 4px 12px rgba(0,0,0,0.1)",
+    "gapBetweenCards":        "16px",
+    "gapBetweenSections":     "32px",
+    "kpiCardPadding":         "18px 20px",
+    "kpiGridGap":             "12px",
+    "chartMinHeight":         "240px",
+    "sectionLabelMarginBottom": "14px"
+  },
+
+  "chartDefaults": {
+    "library":  "Chart.js",
+    "version":  "4.4.1",
+    "cdnUrl":   "https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js",
+    "global": {
+      "responsive":          true,
+      "maintainAspectRatio": false
+    },
+    "gridLines": {
+      "color": "rgba(0,0,0,0.06)",
+      "rules": [
+        "Vertical bar charts: hide X-axis grid, show Y-axis grid",
+        "Horizontal bar charts: hide Y-axis grid, show X-axis grid",
+        "Line charts: show Y-axis grid, hide X-axis grid"
+      ]
+    },
+    "axisTicks": {
+      "color": "#b0bcc8",
+      "font":  { "family": "Inter, sans-serif", "size": 10 }
+    },
+    "tooltip": {
+      "backgroundColor": "#ffffff",
+      "titleColor":      "#1a1a2e",
+      "bodyColor":       "#4a5568",
+      "borderColor":     "rgba(0,0,0,0.1)",
+      "borderWidth":     1,
+      "padding":         10,
+      "font":            { "family": "Inter, sans-serif", "size": 12 }
+    },
+    "legend": {
+      "display":         false,
+      "defaultPosition": "bottom",
+      "labels": {
+        "color":     "#4a5568",
+        "font":      { "family": "Inter, sans-serif", "size": 10 },
+        "boxWidth":  10,
+        "boxHeight": 10,
+        "padding":   12
+      },
+      "rules": [
+        "Hidden by default",
+        "Show only when chart contains multiple series requiring distinction",
+        "Always position at bottom when shown"
+      ]
+    },
+    "barDefaults": {
+      "borderRadius": 4,
+      "borderWidth":  0
+    },
+    "lineDefaults": {
+      "tension":          0.3,
+      "pointRadius":      4,
+      "pointHoverRadius": 6,
+      "borderWidth":      2,
+      "fill":             false
+    }
+  },
+
+  "components": {
+    "kpiCards": {
+      "structure": "Every KPI card must contain exactly three elements in this order",
+      "elements": [
+        { "order": 1, "element": "label",    "style": "kpiLabel"    },
+        { "order": 2, "element": "value",    "style": "kpiValue"    },
+        { "order": 3, "element": "sublabel", "style": "kpiSublabel" }
+      ],
+      "deltaIndicators": {
+        "positive": { "color": "#00a651", "symbol": "▲" },
+        "negative": { "color": "#e8112d", "symbol": "▼" },
+        "neutral":  { "color": "#b0bcc8", "symbol":  "—" }
+      }
+    },
+    "insightBanner": {
+      "background":   "linear-gradient(135deg, rgba(0,61,143,0.06) 0%, rgba(0,160,210,0.04) 100%)",
+      "border":       "1px solid rgba(0,61,143,0.15)",
+      "borderRadius": "6px",
+      "padding":      "12px 18px",
+      "fontSize":     "12px",
+      "color":        "#003d8f",
+      "placement":    "directly below header, above KPI cards"
+    },
+    "sectionDividers": {
+      "labelStyle":  "sectionLabel",
+      "lineColor":   "rgba(0,0,0,0.08)",
+      "lineHeight":  "1px",
+      "layout":      "label left with full-width line extending to the right"
+    },
+    "tables": {
+      "headerBackground":    "transparent",
+      "rowBackground":       "#ffffff",
+      "rowAltBackground":    "#f7f9fa",
+      "rowHoverBackground":  "rgba(0,61,143,0.04)",
+      "borderColor":         "rgba(0,0,0,0.06)",
+      "positiveValueColor":  "#00a651",
+      "negativeValueColor":  "#e8112d"
+    },
+    "filters": {
+      "background":        "#ffffff",
+      "border":            "1px solid rgba(0,0,0,0.12)",
+      "borderRadius":      "4px",
+      "padding":           "6px 10px",
+      "fontSize":          "11px",
+      "color":             "#4a5568",
+      "hoverBorderColor":  "#003d8f",
+      "focusBorderColor":  "#00a0d2"
+    }
+  },
+
+  "responsive": {
+    "breakpoints": [
+      { "maxWidth": "900px", "behaviour": "KPI grid collapses to 3 columns. Multi-column chart rows collapse to single column." },
+      { "maxWidth": "600px", "behaviour": "KPI grid collapses to 2 columns. Dashboard title font-size reduces to 22px." }
+    ]
+  },
+
+  "footer": {
+    "borderTop":  "1px solid rgba(0,0,0,0.08)",
+    "marginTop":  "48px",
+    "paddingTop": "20px",
+    "font":       "footerText",
+    "requiredContent": [
+      "Project code and name",
+      "Owner name",
+      "Version and date",
+      "Data specification reference"
+    ]
+  }
+}
