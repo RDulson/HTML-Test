@@ -1,7 +1,7 @@
 # Business Data Document
 ## Project: Operation Biscuit Dunk Analytics (BDA-001)
-**Version:** 2.0 | **Owner:** S. McVitie (Project Manager) | **Last Updated:** 2026-05-27
-**lastUpdated:** 2026-05-27
+**Version:** 2.0 | **Owner:** S. McVitie (Project Manager) | **Last Updated:** 2026-05-27T14:32:07Z
+**lastUpdated:** 2026-05-27T14:32:07Z
 
 ---
 
